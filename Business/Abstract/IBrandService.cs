@@ -11,6 +11,6 @@ namespace Business.Abstract
         void Update(Brand brand);
         void Delete(Brand brand);
         List<Brand> GetAll();
-        List<Brand> GetById(int id);
+        Brand GetById(int id);
     }
 }

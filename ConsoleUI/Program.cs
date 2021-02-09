@@ -23,13 +23,11 @@ namespace ConsoleUI
                 Console.WriteLine(car.Model);
             }
 
-            brandManager.Add(new Brand  {Name = "Sarı" });
-            foreach (var color in brandManager.GetAll())
+            colorManager.Add(new Color  {Name = "Sarı" });
+            foreach (var color in colorManager.GetAll())
             {
                 Console.WriteLine(color.Name);
             }
-
-
         }
     }
 }
