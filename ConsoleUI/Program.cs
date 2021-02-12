@@ -13,21 +13,8 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
 
-            ICarService carManager = new CarManager(new EfCarDal());
-            IBrandService brandManager = new BrandManager(new EfBrandDal());
-            IColorService colorManager = new ColorManager(new EfColorDal());
 
-            foreach (var car in carManager.GetAll())
-            {
-                //burada aracın herhangi bir özelliğini yazdırabiliriz.
-                Console.WriteLine(car.Model);
-            }
-
-            colorManager.Add(new Color  {Name = "Sarı" });
-            foreach (var color in colorManager.GetAll())
-            {
-                Console.WriteLine(color.Name);
-            }
+            
         }
     }
 }
