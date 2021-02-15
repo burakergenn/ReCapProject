@@ -25,7 +25,7 @@ namespace Business.Concrete
                 return new ErrorResult();
             }
             _userDal.Add(user);
-            return new SuccessResult();
+            return new SuccessResult(Messages.UserAdded);
         }
 
         public IResult Delete(User user)
@@ -39,9 +39,9 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetAll());
         }
 
-        public IDataResult<User> GetById(int userId)
+        public IDataResult<User> GetById(int id)
         {
-            return new SuccessDataResult<User>(_userDal.Get(p => p.Id == userId));
+            return new SuccessDataResult<User>(_userDal.Get(p => p.Id == id));
         }
 
         public IDataResult<User> GetUsersByEmail(string email)
