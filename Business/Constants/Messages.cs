@@ -35,7 +35,6 @@ namespace Business.Constants
         public static string MaintenanceTime = "Sistem Bakımda";
         public static string DailyPriceError = "Araç günlük bedeli 0 dan büyük olmalıdır." ;
         public static string CustomerCompanyNameInvalid = "Müşteri şirket ismi geçersiz";
-
-
+        public  static string NumberOfPicturesExceeded = "5 resimden fazlasını ekleyemezsiniz.";
     }
 }

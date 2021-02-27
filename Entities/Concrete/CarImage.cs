@@ -11,6 +11,5 @@ namespace Entities.Concrete
         public int CarId { get; set; }
         public string ImagePath { get; set; }
         public DateTime DateCreated { get; set; }
-        public DateTime DateModified { get; set; }
     }
 }
